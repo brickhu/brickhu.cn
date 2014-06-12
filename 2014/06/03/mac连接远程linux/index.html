@@ -1,0 +1,104 @@
+
+	<!DOCTYPE html>
+	<html>
+	
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>brickhu</title>
+    <link rel="stylesheet" href="/css/ui.css" type="text/css">
+  </head>
+
+
+
+
+	<body class="">
+	  <div class="container">
+	     <div class="row center-box">
+	<div class="post">
+		<div class="globle-nav">
+			<a href="/">
+			
+		    	<img class="author" title="About me" src="http://www.gravatar.com/avatar/b81dada917a87a57ca2f16a9ffed4534?s=180" />
+		    
+		    </a>
+		</div>
+		<article class="main" id="mac连接远程linux">
+	
+	<header>
+		<h1>mac如何连接远程linux，类似windows上的putty和winscp</h1>
+		<div class="meta">http://www.cnblogs.com/dorothychai/archive/2012/10/26/2740505.html</div>
+	</header>
+	
+	<div><p>windows上有putty可以通过ssh协议连接远程linux系统。mac上也可以用终端连接，转自：<a href="http://www.unixnewbie.org/putty-equivalent-for-mac-os-x/" target="_blank">http://www.unixnewbie.org/putty-equivalent-for-mac-os-x/</a></p>
+<blockquote>
+<p>In Mac, there is a similar, built-in application called Terminal.To start Terminal, go to your Mac’s Applications folder =&gt; click on the Utilities folder =&gt; then click on Terminal.</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="comment"># ssh username@server.address.com</span>
+
+example: 
+<span class="comment"># ssh root@unixnewbie.org</span>
+
+- when prompted <span class="keyword">for</span> the password, enter your web server password.
+- to quit the session, <span class="built_in">type</span> <span class="string">"exit"</span>.
+</pre></td></tr></table></figure>
+
+<p>当然mac上也可以像windows上的winscp一样进行文件操作。参考：<a href="http://www.openssh.com/macos.html,我用的工具是Cyberduck" target="_blank">http://www.openssh.com/macos.html,我用的工具是Cyberduck</a> <a href="http://cyberduck.ch/" target="_blank">http://cyberduck.ch/</a></p>
+<p><img src="http://pic002.cnblogs.com/images/2012/338008/2012102602421889.png" alt="cyberduck缩略图"><br>如上图，选择Open Connection</p>
+<p><img src="http://pic002.cnblogs.com/images/2012/338008/2012102602442190.png" alt="cyberduck缩略图"><br>在协议那一栏选则SFTP(SSH File Transfer Protocol)</p>
+<p><img src="http://pic002.cnblogs.com/images/2012/338008/2012102602455157.png" alt="cyberduck缩略图"><br>然后输入用户名，密码和地址即可~</p>
+</div>
+</article>
+
+	</div>
+	
+<button id="btn-comments">
+	    	评论
+	    </button>
+<section id="comment" style="display:none;">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>
+	  </div>
+	  
+
+<script src="/js/jquery-1.11.0.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+var disqus_shortname = 'brickhu';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+	<script type="text/javascript">
+		$( "#btn-comments" ).click(function() {
+  			$( "#comment" ).toggle();
+        $( "body" ).toggleClass( "setContainerLeft");
+		});
+	</script>
+
+	</body>
+	</html>

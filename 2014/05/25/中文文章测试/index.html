@@ -1,0 +1,84 @@
+
+	<!DOCTYPE html>
+	<html>
+	
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>brickhu</title>
+    <link rel="stylesheet" href="/css/ui.css" type="text/css">
+  </head>
+
+
+
+
+	<body class="">
+	  <div class="container">
+	     <div class="row center-box">
+	<div class="post">
+		<div class="globle-nav">
+			<a href="/">
+			
+		    	<img class="author" title="About me" src="http://www.gravatar.com/avatar/b81dada917a87a57ca2f16a9ffed4534?s=180" />
+		    
+		    </a>
+		</div>
+		<article class="main" id="中文文章测试">
+	
+	<header>
+		<h1>中文文章测试</h1>
+		<div class="meta">文 / 胡飞</div>
+	</header>
+	
+	<div><p>hexo是由Node.js驱动的一款快速、简单且功能强大的博客框架。它和jekyll相比，更快，更轻量。之前在Github上托管的博客就是使用jekyll搭建的，官方的Github Pages同样推荐使用它。但是jekyll目前有不少缺点，包括生成速度尤其是文章多了以后的生成速度让人无法接受，默认引擎Redcarpet解析Markdown时对中文支持不好，而且在Windows上使用问题多多，之前被严重坑过，虽然有解决的办法但是实在是耗费精力。经过@AriesDevil同学介绍，认识了hexo，这个来自台湾大学生的作品，蒙拜之情瞬间产生。<br>于是从Github </p>
+<p>Clone项目，在非常详细的文档帮助下马上就在本地跑起来博客了，速度飕飕的果不其然，V8引擎不是盖的，快赶上法拉利了。下面是具体的步骤和需要注意的事情。</p>
+<h2 id="安装与配置">安装与配置</h2>
+<p>需要先配置好Node.js环境，npm工具以及Git，之后的本地初始化请参考文档中的说明，照着文档一步步做就行。</p>
+</div>
+</article>
+
+	</div>
+	
+<button id="btn-comments">
+	    	评论
+	    </button>
+<section id="comment" style="display:none;">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>
+	  </div>
+	  
+
+<script src="/js/jquery-1.11.0.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+var disqus_shortname = 'brickhu';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+
+
+	<script type="text/javascript">
+		$( "#btn-comments" ).click(function() {
+  			$( "#comment" ).toggle();
+        $( "body" ).toggleClass( "setContainerLeft");
+		});
+	</script>
+
+	</body>
+	</html>
